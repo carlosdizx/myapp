@@ -15,7 +15,7 @@ class CursoController extends Controller
      */
     public function index()
     {
-        $datos['cursos'] = Curso::paginate(5);
+        $datos['cursos'] = Curso::all();
         return view('cursos.index',$datos);
     }
 
