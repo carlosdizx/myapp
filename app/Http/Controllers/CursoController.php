@@ -36,7 +36,9 @@ class CursoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $dataCurso = request() -> except('_token');
+        Curso::insert($dataCurso);
+        return response() ->json($dataCurso);
     }
 
 

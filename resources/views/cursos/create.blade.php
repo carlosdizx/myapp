@@ -4,18 +4,17 @@
     <div class="container p-4">
         <div clas="row">
             <div class="col-md-8 mx-auto">
-                <form action="" enctype="multipart/form-data" method="post">
-                    <input type="text" class="form-control" placeholder="Nombre">
+                <form action="{{ url('/cursos') }}" method="post" enctype="multipart/form-data">
+                    @csrf
+                    <input type="text" class="form-control" name="nombre" placeholder="Nombre">
                     <br />
-                    <input type="text" class="form-control" placeholder="Nombre">
+                    <input type="text" class="form-control" name="descripcion" placeholder="Descripción">
                     <br />
-                    <input type="text" class="form-control" placeholder="Duracion">
+                    <input type="text" class="form-control" name="duracion" placeholder="Duración">
                     <br />
-                    <input type="text" class="form-control" placeholder="Descripcion">
+                    <input type="text" class="form-control" name="tutor" placeholder="tutor">
                     <br />
-                    <input type="text" class="form-control" placeholder="Tutor">
-                    <br />
-                    <input type="submit" class="btn btn-success" name="registrar" value="Registrar">
+                    <input type="submit" class="btn btn-success" value="Registrar">
                 </form>
             </div>
         </div>
