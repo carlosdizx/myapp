@@ -46,10 +46,7 @@ class CursoController extends Controller
      * @param null $detalles
      * @return string
      */
-    public function show($curso,$detalles=null){
-        if ($detalles){
-            return "Bienvenido al curso de $curso de $detalles";
-        }
+    public function show($curso){
         return "Bienvenido al curso de $curso";
     }
 
