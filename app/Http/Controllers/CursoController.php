@@ -15,7 +15,8 @@ class CursoController extends Controller
      */
     public function index()
     {
-        return view('cursos.index');
+        $datos['cursos'] = Curso::paginate(5);
+        return view('cursos.index',$datos);
     }
 
     /**
@@ -45,7 +46,6 @@ class CursoController extends Controller
     /**
      * * Display the specified resource.
      * @param $curso
-     * @param null $detalles
      * @return string
      */
     public function show($curso){
