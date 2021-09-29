@@ -38,6 +38,9 @@ class CursoController extends Controller
     public function store(Request $request)
     {
         $dataCurso = request() -> except('_token');
+        if ($request->hasFile('portada')){
+            $dataCurso['portada'] = $request->file('portada')->store('uploads','public');
+        }
         Curso::insert($dataCurso);
         //return response() ->json($dataCurso);
         return redirect('cursos');

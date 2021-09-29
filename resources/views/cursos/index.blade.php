@@ -6,6 +6,7 @@
                 <div class="col-4">
                     <div class="card" style="width: 18rem;">
                         <div class="card-body">
+                            <img height="200" src="{{asset('storage').'/'.$cursos->portada}}" class="card-img-top" alt="{{$cursos->nombre}}">
                             <h2 class="card-title">{{$cursos->nombre}}</h2>
                             <h5 class="card-text">{{$cursos->tutor}}</h5>
                             <p class="card-text">{{$cursos->duracion}}</p>
