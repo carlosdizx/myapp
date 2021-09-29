@@ -1,28 +1,19 @@
 @extends('layouts.template')
 @section('title','Página inicial')
 @section('content')
-    <table class="table table-striped table-dark">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Nombre</th>
-                <th>Descripción</th>
-                <th>Duración</th>
-                <th>Tutor</th>
-                <th>Acciones</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach($cursos as $cursos)
-            <tr>
-                <td>{{$cursos ->id}}</td>
-                <td>{{$cursos ->nombre}}</td>
-                <td>{{$cursos ->descripcion}}</td>
-                <td>{{$cursos ->duracion}}</td>
-                <td>{{$cursos ->tutor}}</td>
-                <td>Editar | Eliminar</td>
-            </tr>
-            @endforeach
-        </tbody>
-    </table>
+    <div class="row g-2">
+    @foreach($cursos as $cursos)
+                <div class="col-6">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h4 class="card-title">{{$cursos->nombre}}</h4>
+                            <h5 class="card-text">{{$cursos->tutor}}</h5>
+                            <p class="card-text">{{$cursos->duracion}}</p>
+                            <p class="card-text">{{$cursos->descripcion}}</p>
+                            <a href="#" class="btn btn-primary btn-block">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+    @endforeach
+    </div>
 @endsection
