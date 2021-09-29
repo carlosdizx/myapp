@@ -33,7 +33,7 @@
     </nav>
     <div class="container p-4">
         <div clas="row">
-            <div class="col-md-8 mx-auto">
+            <div class="mx-auto">
                 @yield('content')
             </div>
         </div>
