@@ -10,7 +10,7 @@
                             <h5 class="card-text">{{$cursos->tutor}}</h5>
                             <p class="card-text">{{$cursos->duracion}}</p>
                             <p class="card-text">{{$cursos->descripcion}}</p>
-                            <a href="#" class="btn btn-primary btn-block">Go somewhere</a>
+                            <a href="#" class="btn btn-info btn-block">Ir al curso</a>
                         </div>
                     </div>
                 </div>
