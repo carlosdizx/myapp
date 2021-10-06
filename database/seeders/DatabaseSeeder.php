@@ -15,12 +15,15 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // \App\Models\User::factory(10)->create();
-        $curso = new Curso;
-        $curso->nombre ="Laravel";
-        $curso->descripcion ="Curso de laravel";
-        $curso->duracion ="10 horas";
-        $curso->tutor ="Juan Perez";
-        $curso->portada ="laravel.jpg";
-        $curso->save();
+        for ($i = 1 ; $i <= 10 ; $i++)
+        {
+            $curso = new Curso;
+            $curso->nombre ="Curso ".$i;
+            $curso->descripcion ="Curso de lo que sea ".$i;
+            $curso->duracion =$i." horas";
+            $curso->tutor ="Tutor ".$i;
+            $curso->portada ="laravel$i.jpg";
+            $curso->save();
+        }
     }
 }
