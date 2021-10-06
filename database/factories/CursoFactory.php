@@ -22,8 +22,8 @@ class CursoFactory extends Factory
     public function definition()
     {
         return [
-          'nombre'=>$this->faker->sentences(),
-          'descripcion'=>$this->faker->paragraph(),
+          'nombre'=>$this->faker->sentence(),
+          'descripcion'=>$this->faker->text(),
           'duracion'=>$this->faker->numberBetween($min = 10, $max = 40),
           'tutor'=>$this->faker->name(),
           'portada'=>$this->faker->paragraph(),
