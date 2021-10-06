@@ -1,6 +1,3 @@
-INSERT INTO myapp.cursos (id, nombre, descripcion, duracion, tutor, created_at, updated_at) VALUES (1, 'JavaScript', 'js puro y duro', '12 meses', 'Michaell Torres', null, null);
-INSERT INTO myapp.cursos (id, nombre, descripcion, duracion, tutor, created_at, updated_at) VALUES (2, 'Java', 'Java 11 openjdk', '1 dia', 'Jimmy Bastion', null, null);
-INSERT INTO myapp.cursos (id, nombre, descripcion, duracion, tutor, created_at, updated_at) VALUES (3, 'PHP', 'Php 7', '10 horas', 'Grabiel Rosero', null, null);
-INSERT INTO myapp.cursos (id, nombre, descripcion, duracion, tutor, created_at, updated_at) VALUES (4, 'Node JS', 'Node js pro', '10 min', 'El Cujar 😎', null, null);
-INSERT INTO myapp.cursos (id, nombre, descripcion, duracion, tutor, created_at, updated_at) VALUES (5, 'Vue Js', 'Interfaces con vue y  vuetify 🤑', '10 Segundos', 'Fráncico Iles', null, null);
-INSERT INTO myapp.cursos (id, nombre, descripcion, duracion, tutor, created_at, updated_at) VALUES (6, 'PostgreSQL', 'PostgreSQL > MySQL', '10 centésimas', 'Fanny Gaspar', null, null);
+INSERT INTO myapp.cursos (id, nombre, descripcion, duracion, tutor, portada, created_at, updated_at) VALUES (1, 'PostgreSQL', 'PostgreSQL > MySQL', '10 Meses', 'Carlos Díaz', 'uploads/vaZM9nC3OwBDpPl79BWRdnPeew9j7IMm5rHD0JXB.jpg', null, null);
+INSERT INTO myapp.cursos (id, nombre, descripcion, duracion, tutor, portada, created_at, updated_at) VALUES (2, 'Vue Js', 'Interfaces gráficas increibles', '5 Meses', 'Alex Gonzales', 'uploads/fsUjAfk5ibSWnrlW0HFY4MFdEXlLplanIpHU2ceG.jpg', null, null);
+INSERT INTO myapp.cursos (id, nombre, descripcion, duracion, tutor, portada, created_at, updated_at) VALUES (3, 'Java', 'Java con openjdk 11', '1 año', 'Yuli Garcia', 'uploads/4eDFpxtYUXRFXcPvGQcD5xkJek7UGRHjod4CWH1J.jpg', null, null);

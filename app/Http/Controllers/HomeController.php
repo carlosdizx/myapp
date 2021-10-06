@@ -10,6 +10,6 @@ class HomeController extends Controller
 
     public function __invoke(): string
     {
-        return "Bienvenido a la pagina principal";
+        return redirect("cursos");
     }
 }
